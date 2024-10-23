@@ -7,7 +7,10 @@ class User:
         self.is_rewards_member=False
         self.gold_card_points = 0
     def display_info(self):
-        print(self.first_name,self.last_name,self.email,self.age)
+        print(self.first_name)
+        print(self.last_name)
+        print(self.email)
+        print(self.age)
     def enroll(self):
         if self.is_rewards_member==True:
             print(f"{self.first_name} is already a rewards member")
