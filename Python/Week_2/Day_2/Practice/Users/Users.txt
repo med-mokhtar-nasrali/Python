@@ -1,0 +1,10 @@
+INSERT INTO users_schema.users (id, first_name, last_name, email) VALUES 
+(1, "Mokhtar", "Nasrali", "mokhtar@gmail.com"),
+(2, "Yassine", "Ahmed", "yassine@gmail.com"),
+(3, "Samir", "Latifi", "samir@gmail.com");
+SELECT * FROM users_schema.users;
+SELECT * FROM users_schema.users ORDER BY email LIMIT 1;
+SELECT * FROM users_schema.users ORDER BY id DESC LIMIT 1;
+UPDATE users_schema.users SET last_name = "Pancakes" WHERE id= "3";
+DELETE FROM users_schema.users WHERE id = 2;
+SELECT * FROM users_schema.users ORDER BY first_name;
