@@ -1,0 +1,10 @@
+.red{
+    background-color: red;
+}
+.black{
+    background-color: black;
+}
+tr td{
+    width: 60px;
+    height: 60px;
+}

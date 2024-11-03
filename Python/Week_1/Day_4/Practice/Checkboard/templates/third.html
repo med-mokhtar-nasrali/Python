@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='style.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+    {% for i in range(hieght): %}
+        {% if i%2==0 %}
+            <tr>
+                {% for j in range(width): %}
+                    {% if j%2==0 %}
+                        <td class="red"></td>
+                    {% else %}
+                        <td class="black"></td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        {% else %}
+        <tr>
+            {% for j in range(width): %}
+                {% if j%2==0 %}
+                    <td class="black"></td>
+                {% else %}
+                    <td class="red"></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        {% endif %}
+    {% endfor %}
+    </table>
+</body>
+</html>
