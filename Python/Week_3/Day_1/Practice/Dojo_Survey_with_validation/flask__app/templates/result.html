@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Submission Result</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Name: {{ user.name }}</h5>
+                <p class="card-text"><strong>Location:</strong> {{ user.location }}</p>
+                <p class="card-text"><strong>Favorite Language:</strong> {{ user.language }}</p>
+                <p class="card-text"><strong>Comment:</strong> {{ user.comment }}</p>
+            </div>
+        </div>
+        <a href="/" class="btn btn-secondary mt-3">Back to Form</a>
+    </div>
+</body>
+</html>
