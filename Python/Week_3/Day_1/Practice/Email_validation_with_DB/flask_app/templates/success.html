@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Email Submission Result</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">The email adress you entred is Valid</h5>
+                <p class="card-text"><strong>Email: {{ user.email }} </strong> </p>
+            </div>
+            <div class="card-body">
+                <h1>Email :</h1>
+                {% for user in all_users %}
+                    <p>{{user.email}} {{user.created_at}}</p>
+                {% endfor %}
+            </div>
+        </div>
+        <a href="/" class="btn btn-secondary mt-3">Back to Form</a>
+    </div>
+</body>
+</html>
